@@ -1,8 +1,8 @@
 {
 "name":"Evgen",
-"surname":"Lukyanov"
+"surname":"Lukyanov",
 "nN1ce":{"info":{"Age":30,
                  "height":195,
-                 "weight":100
+                 "weight":100,
                  "hobby":["sport", "run", "eat"]}}
 }
