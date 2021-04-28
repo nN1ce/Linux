@@ -18,3 +18,27 @@
 18) вывести несколько последних строк из текстового файла  tail testlongfile.txt  
 19) просмотреть содержимое длинного файла (команда less) изучите как она работает. less testlongfile.txt
 20) вывести дату и время    date
+
+
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+https://api.quarantine.country/api/v1/regions       curl -s -o /dev/null -w "%{http_code}" https://api.quarantine.country/api/v1/regions
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+cd two/
+#Переходим в папку two
+mkdir {z,x,c}
+#Создаем папки z,x,c
+cd z/
+#Переходим в папку z
+touch I.txt II.txt III.txt IV.json V.json
+# Создаем 3 файла txt и два файла json
+mkdir {R,E,C}
+#Создаем три папки R,E,C
+ls -la
+#Смотрим содержимое папки
+mv /c/qatest/tutorial_1/two/z/IV.json V.json /c/qatest/tutorial_1/two/x/
+#Переносм файлы IV.json иV.json из папки z в папку x
